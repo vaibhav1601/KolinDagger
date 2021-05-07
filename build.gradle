@@ -84,6 +84,14 @@ dependencies {
     implementation "android.arch.persistence.room:runtime:$versions.room_version"
     annotationProcessor "android.arch.persistence.room:compiler:$versions.room_version"
 
+    implementation "io.reactivex.rxjava2:rxjava:$versions.rxJava"
+
+    implementation "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid"
+
+    implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$versions.retrofitRxAdapter"
+
+
+
 
 
 }

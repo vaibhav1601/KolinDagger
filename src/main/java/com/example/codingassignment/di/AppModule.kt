@@ -4,15 +4,18 @@ import android.content.Context
 import androidx.room.Room
 import com.example.codingassignment.api.GithubApi
 import com.example.codingassignment.data.database.GitRepoDataBase
+import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
 import dagger.hilt.android.qualifiers.ApplicationContext
+import okhttp3.Cache
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
 
@@ -49,7 +52,6 @@ object AppModule {
     @Provides
     @Singleton
     fun provideRepoDao(db: GitRepoDataBase) = db.getRepoDTO() // The reason we can implement a Dao for the database
-
 
 
 
