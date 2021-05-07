@@ -35,6 +35,12 @@ ext.versions = [
         // navigation component
         navVersion              : '2.3.0',
 
-        room_version            :'2.3.0'
+        room_version            :'2.3.0',
+
+        'rxJava'           : '2.1.7',
+
+        'rxAndroid'        : '2.0.1',
+
+        'retrofitRxAdapter': '1.0.0'
 
 ]
